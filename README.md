@@ -1,6 +1,5 @@
 # kubernetes-tutorial
 
-# Kubernetes Learning Path
 
 This document outlines a comprehensive 30-section learning path for Kubernetes, focusing on commands and practical usage. Each section introduces a new concept or command, building on the previous ones. By the end of this journey, you'll be well-versed in Kubernetes and ready to tackle advanced projects.
 
