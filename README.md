@@ -1022,6 +1022,3 @@ Citations:
    ```bash
    $ kubectl apply -f monitoring-deployment.yaml
    ```
-
-By following these steps, you can deploy a blue-green deployment, a small web application using Python and Flask, and a large application with multiple containers, including monitoring, in Kubernetes.
-```
