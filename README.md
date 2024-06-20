@@ -8,6 +8,37 @@ This document outlines a comprehensive 30-section learning path for Kubernetes, 
 
 Kubernetes is an open-source platform for automating the deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery.
 
+```bash
++-------------------+
+|    Master Node    |
+|-------------------|
+| API Server        |
+| Scheduler         |
+| Controller Manager|
+| etcd              |
++-------------------+
+
++-------------------+    +-------------------+
+|   Worker Node 1   |    |   Worker Node 2   |
+|-------------------|    |-------------------|
+| kubelet           |    | kubelet           |
+| kube-proxy        |    | kube-proxy        |
+| Container runtime |    | Container runtime |
+|-------------------|    |-------------------|
+| +-------------+   |    | +-------------+   |
+| |    Pod 1    |   |    | |    Pod 2    |   |
+| | +---------+ |   |    | | +---------+ |   |
+| | |Container| |   |    | | |Container| |   |
+| | +---------+ |   |    | | +---------+ |   |
+| +-------------+   |    | +-------------+   |
++-------------------+    +-------------------+
+
++-------------------+
+|      Service      |
+|-------------------|
+| Connects to Pods  |
++-------------------+
+```
 ## Section 2: Setting Up Kubernetes on Docker Desktop
 
 **How to set up Kubernetes on Docker Desktop?**
